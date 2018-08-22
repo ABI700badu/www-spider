@@ -17,7 +17,7 @@ public class JsonSelectorModel extends ModelSchema implements IModel{
         this.model=model;
     }
     @Override
-    synchronized public String modify(String html, String url) {
+    public String modify(String html, String url) {
         if(StringUtil.isEmpty(html)){
             return null;
         }
